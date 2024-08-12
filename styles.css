@@ -1,0 +1,214 @@
+/* Day mode styles */
+.day-mode {
+    background: linear-gradient(to top, #c4c6c7, #636465); /* Gradient from gray to white */
+    color: #000; /* Black text color for day mode */
+}
+
+/* Toggle button styling */
+#mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #ff002fd1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+#mode-toggle:hover {
+    background: #ffc107;
+}
+
+/* Existing night mode styles */
+body {
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for background and color */
+    margin: 0;
+    padding: 0;
+    background: #000; /* Black background */
+    color: #fff; /* White text color */
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center align the nav items */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fd002ef3; /* Stylish pink color */
+    text-shadow: 0 0 10px #e40a32;
+}
+
+.profile {
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.profile img {
+    width: 150px; /* Adjusted width */
+    height: 150px; /* Adjusted height to maintain aspect ratio */
+    border-radius: 5%;
+    border: 3px solid #fd002ef3;
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+    text-shadow: #fd002ef3;
+    box-shadow: 0 5px 15px rgba(255, 96, 96, 0.4);
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+.profile h2 {
+    transition: color 0.5s ease-in-out;
+}
+
+.profile h2:hover {
+    color: #fd002ef3;
+}
+
+.profile p {
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile p:hover {
+    transform: translateY(-10px);
+}
+
+.profile-pic {
+    display: block;
+    width: 150px; /* Adjusted width */
+    height: 150px; /* Adjusted height to maintain aspect ratio */
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 3px solid #fd002ef3;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Ensures the image covers the area without being stretched */
+    object-position: center; /* Centers the image within the element */
+}
+
+.profile-pic:hover {
+    transform: rotate(360deg);
+    box-shadow: #fd002ef3;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.skills-item {
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-item img {
+    border-radius: 5%;
+    border: 3px solid #fd002ef3;
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+    text-shadow: #fd002ef3;
+    box-shadow: 0 5px 15px rgb(255, 46, 46);
+}
+
+.skills-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgb(247, 40, 40);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(37, 37, 37, 0.1);
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #0a0909;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffc107;
+}
+
+button {
+    background-color: #fd002ef3;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    object-position: center;
+}
+
+button:hover {
+    background-color: #ffca28;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #ff2d55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #fff;
+}
